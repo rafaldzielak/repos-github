@@ -12,6 +12,7 @@ export const getRepos = gql`
             totalCount
           }
           name
+          url
         }
       }
     }

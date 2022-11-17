@@ -6,4 +6,5 @@ export type Repo = {
   forks: {
     totalCount: number;
   };
+  url: string;
 };
