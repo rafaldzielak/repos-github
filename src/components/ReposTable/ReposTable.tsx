@@ -8,7 +8,7 @@ type ReposTableProps = {
 
 const ReposTable: FC<ReposTableProps> = ({ repos }) => {
   return (
-    <Table variant="striped" cursor="default">
+    <Table variant="striped" cursor="default" fontSize="1.1rem">
       <Thead>
         <Tr>
           <Th px="2rem">Name</Th>
@@ -24,7 +24,7 @@ const ReposTable: FC<ReposTableProps> = ({ repos }) => {
         {repos.map((repo) => (
           <Tr key={repo.name + repo.forks.totalCount}>
             <Td px="2rem">
-              <Link color="teal.800" variant="primary" isExternal href={repo.url}>
+              <Link fontWeight="semibold" color="teal.800" variant="primary" isExternal href={repo.url}>
                 {repo.name}
               </Link>
             </Td>

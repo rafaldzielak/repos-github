@@ -5,7 +5,7 @@ export const reposMock = {
     query: getRepos,
     variables: {
       query: "react",
-      first: 5,
+      first: 10,
     },
   },
   result: {
@@ -80,6 +80,17 @@ export const reposMock = {
           },
         ],
       },
+    },
+  },
+};
+
+export const newSearchReposMock = {
+  ...reposMock,
+  request: {
+    query: getRepos,
+    variables: {
+      query: "reac",
+      first: 10,
     },
   },
 };

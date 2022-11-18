@@ -10,7 +10,7 @@ function App() {
     <ApolloProvider client={apolloClient}>
       <Box as="main" maxW="1200" mx="auto" mt="20">
         <Center>
-          <Stack spacing="4rem">
+          <Stack spacing="2rem">
             <Heading margin="auto" color="#333">
               RepoFinder
             </Heading>
